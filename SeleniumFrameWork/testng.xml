@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite2">
+  <test thread-count="5" parallel="classes" name="Test2">
+    <classes>
+      <class name="test.Test1_GoogleSearch2TestNGDemo"/>
+      <class name="test.Test1_GoogleSearch2TestNGDemo2">
+      <methods>
+      <include name ="GoogleSearch2"></include>
+      <include name="GoogleSearch4"></include>
+      <exclude name ="GoogleSearch3"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Suite2 -->
